@@ -112,13 +112,6 @@ textarea {
   padding: 2%;
 }
 
-#mapalargo,
-#direccion {
-  background: rgba(154, 182, 241, 0.555);
-  color: rgb(27, 27, 50);
-  text-decoration: none;
-  border-radius: 2px;
-}
 
 .mapa {
   display: flex;
@@ -128,14 +121,10 @@ textarea {
   padding: 2%;
 }
 
-.botones {
-  text-align: center;
-  width: 325px;
-  padding: 6px 0;
-}
 
-.button-container button {
-  margin-left: auto;
+/* Boton de accion (Enviar) */
+/*Boton de acción*/
+.start-now_button {
   padding: 1%;
   background-color: rgb(177, 0, 0);
   color: white;
@@ -145,12 +134,65 @@ textarea {
   cursor: pointer;
 }
 
-.button-container button:hover {
+.start-now_button:hover {
+  background-color: white;
+  border: 1px solid rgb(177, 0, 0);
+  color: rgb(177, 0, 0);
+}
+
+
+/*  */
+.button-container {
+  display: flex;
+  flex-direction: row;
+  gap: 5%;
+  margin: 5%;
+}
+
+.button-container button {
+  margin-left: auto;
+  padding: 1%;
+  background-color: rgb(177, 0, 0);
+  color: white;
+  border: 1px solid rgb(185, 163, 163);
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+}
+
+
+.button-container button:hover, .button-container a:hover  {
+  background-color: white;
+  border: 1px solid rgb(177, 0, 0);
+  color: rgb(177, 0, 0);
+}
+
+
+/* Botones del mapa */
+#mapalargo, #direccion {
   background-color: white;
   border: 1px solid rgb(177, 0, 0);
   color: rgb(177, 0, 0);
 
+  margin-left: auto;
+  padding: 1%; 
+ 
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
 }
+
+#mapalargo:hover, #direccion:hover {
+  background-color: rgb(177, 0, 0);
+  border: 1px solid white;
+  color: white;
+}
+
+
+
+
 
 /* ----Estilos para validacion---- */
 .formulario__validacion-estado {
@@ -213,7 +255,6 @@ textarea {
 }
 
 @media screen and (max-width:576px) {
-
   form {
     padding: 10%;
   }
