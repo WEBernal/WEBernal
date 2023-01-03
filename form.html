@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcomed English Bernal</title>
+    <link rel="stylesheet" href="CSS/formstyle.css">
+    <link rel="stylesheet" href="CSS/navbarStyle.css">
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&family=Sofia&display=swap"
+        rel="stylesheet">
+
+    <link rel="icon" href="imagenes/lechuzaICO.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="JS/funciones.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="imagenes/logoPNG.png" alt="">
+        </div>
+    </header>
+    <nav class="main"></nav>
+
+    <div class="container">
+
+        <div class="form-container">
+            <h1>Formulario de Contacto</h1>
+            <p>Por favor, completá el formulario.</p>
+            <br><br>
+
+            <form action="#" name="formulario" id="formulario">
+                <ul class="outer">
+                    <li class="form__grupo" id="grupo__nombre">
+                        <label for="nombre" class="formulario__label">Nombre</label>
+                        <input type="text" class="nombre" id="nombre" name="nombre" placeholder="Ingresa tu nombre">
+                      
+                    </li>
+                    <li class="form__grupo" id="grupo__apellido">
+                        <label for="apellido" class="formulario__label">Apellido</label>
+                        <input type="text" class="apellido" id="apellido" name="apellido"
+                            placeholder="Ingresa tu apellido">
+                      
+                    </li>
+                    <li class="form__grupo" id="grupo__email">
+                        <label for="email" class="formulario__label">Email</label>
+                        <input type="email" class="email" id="email" name="email"
+                            placeholder="Ingresa tu correo electrónico">
+                     
+                    </li>
+                    <li class="form__grupo" id="grupo__telefono">
+                        <label for="telefono" class="formulario__label">Teléfono</label>
+                        <input type="number" class="telefono" id="telefono" name="telefono"
+                            placeholder="Ingresa tu número de teléfono">
+                   
+                    <li class="form__grupo" id="grupo__refer">
+                        <label for="referido">¿Cómo nos conociste?</label>
+                        <select name="referido" class="referido" id="referido">
+                            <option value="">(seleccione una opción)</option>
+                            <option value="1">Facebook</option>
+                            <option value="2">Instagram</option>
+                            <option value="3">A través de un conocido</option>
+                            <option value="4">Otro</option>
+                        </select>
+                    </li>
+                    <li class="form__grupo" id="grupo__mensaje">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea name="mensaje" class="mensaje" id="mensaje" rows="6"
+                            placeholder="Ingresa tu mensaje..."></textarea>
+                    </li>
+
+                    <li class="button-container">
+                        <button name="submit" type="submit" class="boton">Enviar</button>
+                        <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado con
+                            éxito!</p>
+                    </li>
+                    <div class="formulario__mensaje" id="formulario__mensaje">
+                 
+                    </div>
+                </ul>
+            </form>
+        </div>
+        <div class="mapa">
+
+            <iframe name="mapa" width="325" height="280" frameborder="0"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.6657487675257!2d-58.30783888476741!3d-34.713609680431084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a332750cecd88f%3A0xfa8ecfb737f1ce5b!2sFormosa%201019%2C%20B1876%20Bernal%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1sen!2sar!4v1665803141892!5m2!1sen!2sar"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="botones">
+                <a id="mapalargo" target="_blank"
+                    href="https://www.google.com/maps/place/Formosa+1019,+B1876+Bernal,+Provincia+de+Buenos+Aires/@-34.7135973,-58.3078454,17z/data=!4m5!3m4!1s0x95a332750cecd88f:0xfa8ecfb737f1ce5b!8m2!3d-34.7136097!4d-58.3056502">Ver
+                    mapa grande</a>
+                <a id="direccion" target="_blank"
+                    href="https://www.google.com/maps/dir//Formosa+1019,+B1876+Bernal,+Provincia+de+Buenos+Aires/@-34.7135973,-58.3078454,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x95a332750cecd88f:0xfa8ecfb737f1ce5b!2m2!1d-58.3056502!2d-34.7136097">Obtener
+                    indicaciones</a>
+            </div>
+        </div>
+    </div>
+    <footer id="footer"></footer>
+
+    <script src="JS/navbar.js"></script>  
+
+
+    <!-- Libreria Fontawesome -->
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
