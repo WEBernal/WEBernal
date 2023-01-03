@@ -1,7 +1,7 @@
 #  Welcomed English Bernal
 ## Sitio web WEBernal
 ![Welcomed English Bernal](/imagenes/logoPNG.png)
-`<link>` : <https://becas-neoris-utn.github.io/TPI/>
+`<link>` : <https://webernal.github.io/WEBernal/>
 
 
 #### Características:
