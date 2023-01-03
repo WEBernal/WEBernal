@@ -10,7 +10,8 @@
 - Formulario de Contacto
 - Validación de Campos
 - Utilización de Bioblioteca JQuery
-- Consumo de API Externa a través de AJAX 
+- Consumo de API Externa a través de AJAX
+- Botón con conexión a Whatsapp Web
 
 #### Tecnologías utilizadas:
 - HTML
