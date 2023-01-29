@@ -12,30 +12,31 @@ body {
 }
 
 h1,
-p {
+p,
+form {
   display: flex;
   justify-content: center;
-  margin-top: 7%;
+  margin: 1%;
 }
 
 .container {
   padding: 3%;
   margin: 0 auto;
-  display: grid;
-  grid-template: 1fr / 2fr 1fr;
-  gap: 1%;
+  display: flex;   
   align-items: center;
 }
 
+/* Formulario START */
 .form-container {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   align-content: space-around;
   gap: 3%;
   background-color: #ffffff;
-  margin: 100px auto;
+  margin: 1%;
   padding: 3vh;
-  width: 80%;
-  min-width: 300px;
+  width: 50%;
+  /* min-width: 300px; */
   border-radius: 14px;
   box-shadow: 0 3px 10px rgb(201 200 200);
 }
@@ -55,7 +56,8 @@ textarea {
 }
 
 .outer {
-  max-width: 800px;
+  display: flex;
+  flex-direction: column; 
   margin: 0 auto;
 }
 
@@ -66,12 +68,12 @@ textarea {
 }
 
 .outer>li:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 5%;
 }
 
 .outer li label,
 .outer li p {
-  padding: 8px;
+  padding: 1%;
   font-weight: 500;
   letter-spacing: .09em;
   text-transform: uppercase;
@@ -94,9 +96,9 @@ textarea {
 .outer li input,
 .outer li select,
 .outer li textarea {
-  padding: 15px;
+  padding: 3%;
   border: none;
-  border-radius: 5px;
+  border-radius: 1vw;
 }
 
 .conditions {
@@ -108,20 +110,10 @@ textarea {
   padding: 2%;
 }
 
-
-.mapa {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  align-items: center;
-  padding: 2%;
-}
-
-
 /* Boton de accion (Enviar) */
 /*Boton de acción*/
 #enviar {
-  padding: 5%;
+  padding: 2%;
   background-color: rgb(177, 0, 0);
   color: white;
   border: 1px solid rgb(185, 163, 163);
@@ -146,6 +138,8 @@ textarea {
   justify-content: flex-end;
 }
 
+
+
 /* .button-container button {
   margin-left: auto;
   padding: 1%;
@@ -166,6 +160,30 @@ textarea {
   color: rgb(177, 0, 0);
 }
 
+/* Formulario END */
+
+/* Mapa START*/
+
+/* .map {
+  display: flex; 
+} */
+
+.map-responsive{  
+  overflow: hidden;
+  padding: 30vh;
+  margin-top: 15%;
+  margin-left: 10%;
+  position: relative;
+  height: 0;
+}
+
+.map-responsive iframe{
+  left:0;
+  top:0;  
+  width:90vw;
+  position:absolute;
+
+}
 
 /* Botones del mapa */
 #mapalargo,
@@ -173,10 +191,7 @@ textarea {
   background-color: white;
   border: 1px solid rgb(177, 0, 0);
   color: rgb(177, 0, 0);
-
-  margin-left: auto;
-  padding: 5%;
-
+  padding: 2%;
   border-radius: 6px;
   cursor: pointer;
   text-decoration: none;
@@ -191,7 +206,7 @@ textarea {
 }
 
 
-
+/* Mapa END*/
 
 
 /* ----Estilos para validacion---- */
@@ -254,9 +269,11 @@ textarea {
   display: block;
 }
 
+/* Media Queries*/
+
 @media screen and (max-width:576px) {
   form {
-    padding: 10%;
+    padding: 1%;
   }
 
   .outer {
@@ -292,10 +309,26 @@ textarea {
 
 @media screen and (max-width:1200px) {
   .outer {
-    width: 60vw;
+    width: 100vw;
   }
 
   .container {
-    grid-template: 3fr 1fr /1fr
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .form-container {
+    width: 100%;
+  }
+
+  .map {
+    margin: 5%;
+    width: 100%;
+  }
+
+  .map-responsive {
+    margin: 0 auto;
+    
+    
   }
 }
