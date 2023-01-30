@@ -20,8 +20,7 @@ $navbar.innerHTML = `
 
 
 $footer.innerHTML = ` 
-<p>Copyright 2023 | All rights reserved</p>
- <div class="site-map"></div>
+<p>Copyright 2023 | All rights reserved</p> 
 
 <div id="boton_whatsapp">
         <a class="boton_whatsapp" href="https://wa.me/5491166098123/?text=Hola,%20Welcomed%20English%20Bernal!" target="_blank">

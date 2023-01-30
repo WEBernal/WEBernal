@@ -18,7 +18,7 @@ html {
 }
 
 .logo img {
-    width: 30%;
+    width: 25%;
     padding: 4%;
 }
 
@@ -135,6 +135,7 @@ footer {
     padding-bottom: 1rem;
     padding: 0.5vw 2vw;
     font-size: 1vw;
+    justify-content: center;
 }
 
 footer p {
