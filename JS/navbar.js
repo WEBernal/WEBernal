@@ -8,6 +8,7 @@ $navbar.innerHTML = `
         <div class="bar-item"><a href="nosotros.html">Nosotros</a></div>       
         <div class="bar-item" id="courses">Cursos
             <div class="dropdown">
+                <a href="cursos_maritimo.html">Inglés Marítimo <span class="new-tag">Nuevo</span></a>
                 <a href="cursos.html">Niños</a>
                 <a href="cursos_adol.html">Adolescentes</a>
                 <a href="cursos_adult.html">Adultos</a>

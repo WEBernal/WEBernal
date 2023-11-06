@@ -143,13 +143,15 @@ nav {
 
 .banner {
     width: 100%;
-    background:url(https://media.tenor.com/Oa4daWm3o4sAAAAC/star-galaxy.gif);
+    background:url(/imagenes/vessel2GIF.gif);
+    background-position: center; /* Ajusta la posición del fondo */
+    /*https://media.tenor.com/Oa4daWm3o4sAAAAC/star-galaxy.gif*/
     /*https://i0.wp.com/media.giphy.com/media/5ERaOy5fQEIAU/giphy.gif*/
     background-size: cover;
     font-size: 2rem;
     color: #fff;
     text-align: center;
-    padding: 1%;
+    padding: 5%;
   }
   
   .big-text {

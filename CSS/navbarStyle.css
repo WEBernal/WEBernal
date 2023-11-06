@@ -127,6 +127,17 @@ nav {
     visibility: visible;
 }
 
+/* Estilos para la etiqueta "Nuevo" */
+.new-tag {
+    background-color: #ff5733;
+    color: #fff;
+    padding: 2px 6px;
+    border-radius: 4px;
+    position: relative;
+    top: 1px; /* Ajusta la posición vertical */
+    right: -11px; /* Ajusta la posición horizontal */
+}
+
 
 /* Footer */
 footer {
