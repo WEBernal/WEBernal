@@ -68,7 +68,7 @@ window.addEventListener("resize", recalculateOffsetTop)
 const $startNow_Button = document.querySelector(".start-now_button")
 
 $startNow_Button.onclick = function () {
-    location.href = "form.html"
+    location.href = "https://webernal.github.io/WEBMaritime/"
 }
 
 //Boton Whastapp
